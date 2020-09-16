@@ -5,7 +5,11 @@
 
 def reverse(ss):
     # Write code here
-    pass
+    if len(ss) == 0:
+        return ss
+    else:
+        # print(ss[1:])
+        return reverse(ss[1:]) + ss[0]
 
 # print(reverse("")) 
 # => ""
